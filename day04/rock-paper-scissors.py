@@ -27,39 +27,23 @@ scissors = '''
 '''
 
 # Write your code below this line 👇
-rps = [rock, paper, scissors]
+game_images = [rock, paper, scissors]
 
-player_choice = input(
-    "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+user_choice = int(input(
+    "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-if player_choice == "0":
-    print(rock)
-elif player_choice == "1":
-    print(paper)
-elif player_choice == "2":
-    print(scissors)
+computer_choice = random.randint(0, 2)
+print(f"Computer chose {computer_choice}")
 
-computer_choice = str(random.randint(0, 2))
-if computer_choice == "0":
-    print(rock)
-elif computer_choice == "1":
-    print(paper)
-elif computer_choice == "2":
-    print(scissors)
-
-print(computer_choice)
-
-if player_choice == computer_choice:
-    print("It's a draw")
-elif player_choice == "0" and computer_choice == "1":
-    print("You lose.")
-elif player_choice == "0" and computer_choice == "2":
+if user_choice >= 3 or user_choice < 0:
+    print("You typed an invalid number")
+elif user_choice == 0 and computer_choice == 2:
     print("You win!")
-elif player_choice == "1" and computer_choice == "2":
-    print("You lose.")
-elif player_choice == "1" and computer_choice == "0":
-    print("You win!")
-elif player_choice == "2" and computer_choice == "0":
+elif computer_choice == 0 and user_choice == 2:
     print("You lose")
-elif player_choice == "2" and computer_choice == "1":
+elif computer_choice > user_choice:
+    print("You lose")
+elif user_choice > computer_choice:
     print("You win!")
+elif computer_choice == user_choice:
+    print("it's a draw")
