@@ -4,5 +4,5 @@ weight = (input("enter your weight in kg: "))
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-result = int(weight) / float(height ** 2)
+result = int(weight) / (float(height) ** 2)
 print(round(result))
