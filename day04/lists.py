@@ -22,7 +22,7 @@ print(len(states_of_america))
 print(states_of_america)
 
 # Will get error as index doesn"t exist
-print(states_of_america[7])
+# print(states_of_america[7])
 
 # dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
 
