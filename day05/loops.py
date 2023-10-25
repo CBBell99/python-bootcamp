@@ -1,9 +1,9 @@
 fruits = ["Apple", "Peach", "Pear"]
 # prints each item
 for fruit in fruits:
-    print(fruits)
-    print(f"{fruits} pie")
-    print(fruits)
+    print(fruit)
+    print(f"{fruit} pie")
+print(fruits)
 
 # For loop with range
 # for number in range(1, 11, 3):
